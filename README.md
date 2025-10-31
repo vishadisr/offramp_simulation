@@ -1,80 +1,110 @@
-# offramp_simulation
-Simulation of a highway off-ramp system using SimPy under different traffic conditions.
+# Kahathuduwa Highway Off-Ramp Simulation
 
-Overview
+**Author:** Vishadi Ranasinghe
 
-This project simulates vehicle traffic at the Kahathuduwa highway exit in Sri Lanka. The goal is to analyze congestion, waiting times, and throughput during different traffic scenarios and identify possible improvements for ramp efficiency and safety.
+---
 
-The simulation uses Python and the SimPy library to model vehicle arrivals, waiting, and departures based on real-world traffic data collected on-site.
+## Overview
 
-Features
+This project simulates vehicle traffic at the Kahathuduwa highway exit in Sri Lanka. The main goal is to analyze congestion, waiting times, and throughput during different traffic scenarios and identify ways to improve ramp efficiency and safety.
 
-Models single-lane and dual-lane off-ramp traffic.
+The simulation uses **Python** and the **SimPy** library to model vehicle arrivals, waiting, and departures based on actual traffic data collected on-site.
 
-Considers variable vehicle arrival intervals and exit durations.
 
-Simulates different scenarios: morning peak, evening peak, weekend traffic, accidents, and new ramp design.
 
-Identifies bottlenecks and calculates waiting times, throughput, and ramp efficiency.
+## Features
 
-Requirements
+* Models **single-lane** and **dual-lane** off-ramp traffic
+* Accounts for variable **vehicle arrival intervals** and **exit durations**
+* Simulates different scenarios:
 
-Python 3.8+
+  * Morning peak
+  * Evening peak
+  * Weekend traffic
+  * Lane blockage (accident)
+  * New ramp design
+* Identifies bottlenecks and calculates:
 
-SimPy library
+  * Waiting times
+  * Throughput
+  * Ramp efficiency
 
-Pandas library (for data handling)
 
-Installation
 
-Clone the repository:
+## Requirements
 
+* Python 3.8+
+* SimPy library
+* Pandas library (for data handling)
+
+
+
+## Installation
+
+1. Clone the repository:
+
+```bash
 git clone <repository_url>
+```
 
-Install required libraries:
+2. Install required libraries:
 
+```bash
 pip install simpy pandas
-Usage
+```
 
-Ensure that the data file (if any) is in the project directory.
 
-Run the simulation script:
 
+
+## Usage
+
+1. Ensure that the data file (if any) is in the project directory.
+2. Run the simulation script:
+
+```bash
 python off_ramp_simulation.py
+```
 
-The program outputs waiting times, throughput, and congestion analysis for the selected scenario.
+3. The program outputs:
 
-Scenarios Simulated
-Scenario	Description
-Morning Peak	Traffic during morning rush hour
-Evening Peak	Traffic during evening rush hour
-Weekend Traffic	Traffic during weekend
-Lane Blockage (Accident)	One lane blocked due to accident
-New Ramp Layout	Two-lane ramp design for improved flow
-Performance Objectives
+* Waiting times
+* Throughput
+* Congestion analysis for the selected scenario
 
-Reduce vehicle waiting time.
 
-Measure exit efficiency.
 
-Maximize throughput.
+## Scenarios Simulated
 
-Assess ramp capacity impact.
+| Scenario                 | Description                            |
+| ------------------------ | -------------------------------------- |
+| Morning Peak             | Traffic during morning rush hour       |
+| Evening Peak             | Traffic during evening rush hour       |
+| Weekend Traffic          | Traffic during weekends                |
+| Lane Blockage (Accident) | One lane blocked due to an accident    |
+| New Ramp Layout          | Two-lane ramp design for improved flow |
 
-Identify congestion points.
 
-Expected Outcomes
 
-High traffic leads to long queues and slower throughput.
 
-Adding lanes or optimizing ramp flow reduces delays.
+## Performance Objectives
 
-Improved ramp design ensures smoother traffic movement during peak hours.
+* Reduce vehicle waiting time
+* Measure exit efficiency
+* Maximize throughput
+* Assess ramp capacity impact
+* Identify congestion points
+* Test scenario-based interventions (lane addition, ramp modifications)
 
-Author
 
-Vishadi Ranasinghe
 
-License
+## Expected Outcomes
 
-This project is licensed under the MIT License.
+* Peak traffic results in longer queues and slower throughput
+* Adding lanes or optimizing ramp flow reduces delays
+* Improved ramp design ensures smoother traffic movement during high-demand periods
+
+
+
+## License
+
+This project is licensed under the **MIT License**.
